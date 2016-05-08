@@ -1,0 +1,33 @@
+{
+
+  "manifest_version": 2,
+  "name": "FL",
+  "version": "1.0",
+ 
+  "description": "Helps to browse projects on fl.ru",
+  
+  "icons": {
+      "48": "icons/icon.png",
+      "96": "icons/icon@2x.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "borderify@mozilla.org",
+      "strict_min_version": "45.0"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+          "*://www.fl.ru/projects/",
+          "*://www.fl.ru/projects/?page=*"
+      ],
+      "js": [
+          "posts.js"
+      ],
+      "css": ["styles.css"]
+    }
+  ]
+}

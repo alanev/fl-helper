@@ -1,0 +1,9 @@
+{
+    "use": [
+        "postcss-nested",
+        "postcss-cssnext"
+    ],
+    "input": "styles.scss",
+    "output": "styles.css",
+    "local-plugins": true
+}
